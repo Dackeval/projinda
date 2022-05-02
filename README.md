@@ -13,4 +13,9 @@ Main goals of the language identifier
 - Identify several different language inputs successfully
 - Build a basic website for text entry and answer
 
+The code will use:
+
+Python as a base for the language identifier. 
+HTML, CSS, JS for the website.
+
 
