@@ -20,10 +20,29 @@
         <form>
         <div class="content">
             <div class="input-group input-group-lg">
-                <input type="text" name="input" value="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <input type="text" name="input" id="myInput" oninput="myFunction()" value="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                 <button type="button" class="btn btn-light">Identify</button>
               </div>
         </div>
     </form>
+    <style>
+    .content2 {
+      max-width: 500px;
+      max-height: 500px;
+      margin: auto;
+      padding-top: 5%;
+      padding-left: 13%;
+    }
+  </style>
+    <div class="content2">
+    <p id="demo"></p>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput").value;
+        document.getElementById("demo").innerHTML = "Language: " + x;
+      }
+      </script>
+
         </body>
 </html>
